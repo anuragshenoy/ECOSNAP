@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feed"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/crowdfunding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crowdfunding" />
+
+        <Button
+            android:id="@+id/action_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action List" />
+
+    </LinearLayout>
+
+</RelativeLayout>
